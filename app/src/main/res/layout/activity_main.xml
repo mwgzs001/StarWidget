@@ -3,13 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/mdBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/md"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/msBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ms"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/gvBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gv"
+            android:textAllCaps="false" />
+    </TableRow>
+
     <Button
-        android:id="@+id/mdBtn"
+        android:id="@+id/glBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/md"
+        android:text="@string/gl"
         android:textAllCaps="false" />
 
 </LinearLayout>

@@ -3,12 +3,16 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-
+repositories {
+    maven {
+        url "http://dl.bintray.com/glomadrian/maven"
+    }
+}
 android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "simw.learn.kotlin.star.widget"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -24,7 +28,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$buildTools_version"
     implementation "com.android.support:recyclerview-v7:$buildTools_version"
     implementation "com.android.support:support-annotations:$buildTools_version"
@@ -33,6 +37,9 @@ dependencies {
     implementation("com.mikepenz:materialdrawer:6.0.8@aar") {
         transitive = true
     }
+    implementation 'com.github.glomadrian:MaterialAnimatedSwitch:1.1@aar'
+    implementation 'com.wx.goodview:goodview:1.0.0'
+    implementation 'com.roger.gifloadinglibrary:gifloadinglibrary:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

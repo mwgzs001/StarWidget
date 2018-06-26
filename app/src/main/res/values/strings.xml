@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">StarWidget-Kot</string>
     <string name="md">Material Drawer</string>
+    <string name="ms">Material Switch</string>
+    <string name="gv">Good View</string>
+    <string name="gl">Gif Loading View</string>
 </resources>

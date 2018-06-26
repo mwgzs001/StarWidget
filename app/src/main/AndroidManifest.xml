@@ -19,6 +19,9 @@
         <activity
             android:name=".materialdrawer.MDActivity"
             android:theme="@style/MaterialDrawer" />
+        <activity android:name=".sidemenu.MSActivity" />
+        <activity android:name=".goodview.GVActivity" />
+        <activity android:name=".gifloadingview.GLActivity" />
     </application>
 
 </manifest>
